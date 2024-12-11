@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lets Create Form!</title>
+        <style>
+       body {
+                    font-Size: 100%;
+                     background-color: powderblue;
+                     margin-left: 20%;
+                     margin-right: 20%;
+                     border: 2px dotted black;
+                     padding: 10px 10px 10px 10px;
+                     focnt-family: sans-serif;
+                }
+       </style>
+    </head>
+
+    <body>
+<form id="Survey-form">
+<h1>Kindly Filled In The Form with The Right Information...</h1>
+<h2>Survey Form</h2>
+<div>Thank you for taking the time to help us improve the platform.</div>
+<div>Enter your Information.</div>
+<div class="form-group">
+
+    <label id="name-label" for="name">Name</label>
+    <input type="text" nane="name" id="name" class="form-control" placeholder="Enter your name" required/>
+
+    <label id="email-label" for="email">Email</label>
+    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email"/>
+
+    <label id="number-label" for="number">Age <span class=""clue>(optional)</span></label>
+    <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age"/> <br>
+
+    <label id="Whatsapp-label" for="whatsapp">Whatsapp</label>
+    <input type="whatsapp" name="whatsapp" class="form-control" placeholder="Enter your whatsappnumber"/>
+
+    <label id="telegram-label" for="telegram">Telegram</label>
+    <input type="telegram" name="telegram" class="form-control" placeholder="Enter you telegram contact"/>
+
+    <p>Wish Option Best Describes your current role?</p>
+
+    <select id="dropdown" name="role"  class="form-control" required>
+    <option disable selected value>Select current role</option>
+    <option value="student">Student</option>
+    <option value="job">Full time Job</option>
+    <option value="learner">ull time Learner</option>
+    <option value="preferNo">prefer not to Say</option>
+    <option value="other">Other</option>
+</select>
+<br>
+<p> Which option best describes your gender</p>
+
+    <select id="dropdown" name="Gender" class="form-control" required>
+        <option disable selected value>Enter your gender</option>
+        <option value="male">Male</option>
+        <option value="Female">Female</option>
+        <option value="other">Other</option>
+    </select>
+    <br>
+
+<button type="submit" id="submit" class="submit-button">SUbmit</button>
+</label>
+ </form>
+    </body>
+</html>
